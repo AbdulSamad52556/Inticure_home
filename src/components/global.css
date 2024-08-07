@@ -1,0 +1,54 @@
+@keyframes slide-up {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.slide-up-enter {
+    animation: slide-up 300ms ease-out;
+  }
+
+.underline-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  left: -16px;
+  bottom: -7px; 
+  width: 0;
+  height: 2px;
+  background-color: #CE5988; 
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.underline-animation:hover::after {
+  width: 70px;
+}
+
+.underline-animation2 {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animation2::after {
+  content: '';
+  position: absolute;
+  left: -16px;
+  bottom: -7px; 
+  width: 0;
+  height: 2px; 
+  background-color: #CE5988; 
+  transition: width 0.1s ease, background-color 0.1s ease;
+}
+
+.underline-animation2:hover::after {
+  width: 90px;
+}
