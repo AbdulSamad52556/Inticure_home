@@ -5,7 +5,7 @@ import haroon from "../../public/dr_haroon.jpg";
 
 const MedicalAdvisoryBoard = () => {
   return (
-    <div className="mb-20">
+    <div className="mb-20 pb-16 bg-[#fcf3ff]">
       <div>
         <h1 className="text-5xl font-normal text-center py-20 text-gray-900">
           Our Medical Advisory Board
