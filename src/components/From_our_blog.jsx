@@ -1,8 +1,8 @@
-import React from 'react'
-import img1 from '../../public/photo1.jpg';
-import img2 from '../../public/photo2.jpg';
-import img3 from '../../public/photo3.jpg';
-
+import React from 'react';
+import img1 from '/photo1.jpg';
+import img2 from '/photo2.jpg';
+import img3 from '/photo3.jpg';
+    
 const From_our_blog = () => {
     return (
         <div>

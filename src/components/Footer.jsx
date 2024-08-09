@@ -1,7 +1,7 @@
 import React from "react";
-import fb from "../../public/fb.png";
-import lin from "../../public/lin.png";
-import insta from "../../public/insta.png";
+import fb from "/fb.png";
+import lin from "/lin.png";
+import insta from "/insta.png";
 
 const Footer = () => {
   return (

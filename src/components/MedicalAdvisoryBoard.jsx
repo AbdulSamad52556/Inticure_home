@@ -1,7 +1,7 @@
 import React from "react";
-import panicker from "../../public/panicker.jpg";
-import anita from "../../public/dr_anita.jpg";
-import haroon from "../../public/dr_haroon.jpg";
+import panicker from "/panicker.jpg";
+import anita from "/dr_anita.jpg";
+import haroon from "/dr_haroon.jpg";
 
 const MedicalAdvisoryBoard = () => {
   return (
