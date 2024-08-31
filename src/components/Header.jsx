@@ -1,11 +1,14 @@
 import React from "react";
 import "./global.css";
+import image from '../../public/logo.jpg'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 const Header = () => {
   return (
-    <div className="w-full flex px-32 py-7 fixed bg-white z-10">
+    <div className="w-full flex px-32 py-7 fixed bg-white z-20">
       <div className="flex gap-10 justify-between w-full ml-4">
         <div>
-          <h1 className="text-black">inticure</h1>
+          <img src={image}></img>
         </div>
         <div className="flex gap-10">
           <div className="flex justify-around gap-12 p-1 text-gray-700 text-l">
@@ -21,15 +24,17 @@ const Header = () => {
             <div className="underline-animation2 cursor-pointer">
               <p>Contact</p>
             </div>
+            <a href="https://customers.inticure.online">
             <div className="underline-animation cursor-pointer">
               <p>Login</p>
-            </div>
+            </div></a>
           </div>
+          <a href="https://analysis.inticure.online/email_signup_" target="_blank" rel="noopener noreferrer">
           <div className="mt-1">
             <button className="bg-custom-color text-white font-semibold py-2.5 px-9 -mt-3 rounded-3xl hover:bg-hover-color transition-all duration-200 ease-in-out">
               Free consultation
             </button>
-          </div>
+          </div></a>
         </div>
       </div>
     </div>

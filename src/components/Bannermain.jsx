@@ -97,9 +97,11 @@ const Bannermain = () => {
             anxiety, weight problems and more to formulate a holistic treatment
             for you.
           </h5>
+          <a href="https://analysis.inticure.online/phone_signup" target="_blank" rel="noopener noreferrer">
+
           <button className="bg-custom-color font-semibold text-white py-2.5 px-12 rounded-3xl hover:bg-hover-color transition-all duration-200 ease-in-out">
             Start a free online consultation{" "}
-          </button>
+          </button></a>
         </div>
         <div className="p-20 bg-white">
           <div className="flex justify-center px-16 mt-5 gap-2">
