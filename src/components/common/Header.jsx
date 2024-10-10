@@ -1,10 +1,10 @@
 import React from "react";
 import "../global.css";
 import image from "/logo.jpg";
-import { useLocation } from "react-router-dom"; // Import the useLocation hook
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
-  const location = useLocation(); // Get the current URL path
+  const location = useLocation();
 
   return (
     <div className="w-full flex px-32 py-7 fixed bg-white z-20">
@@ -15,10 +15,9 @@ const Header = () => {
         <div className="flex gap-10">
           <div className="flex justify-around gap-12 p-1 text-gray-700 text-l">
             <a href="/whyus">
-              {/* <div className="underline-animation2 cursor-pointer"> */}
               <div
-                className={`underline-animation2 cursor-pointer ${
-                  location.pathname === "/whyus" ? "text-blue-500" : ""
+                className={`underline-animation2 cursor-pointer${
+                  location.pathname === "/whyus" ? "" : ""
                 }`}
               >
                 <p className="text-center">Why Us</p>
@@ -53,7 +52,7 @@ const Header = () => {
             rel="noopener noreferrer"
           >
             <div className="mt-1">
-              <button className="bg-custom-color text-white font-semibold py-2.5 px-9 -mt-3 rounded-3xl hover:bg-hover-color transition-all duration-200 ease-in-out">
+              <button className="bg-custom-color text-white text-[10px] md:text-[15px] lg:font-semibold py-2.5 px-9 -mt-3 rounded-3xl hover:bg-hover-color transition-all duration-200 ease-in-out">
                 First consultation
               </button>
             </div>
