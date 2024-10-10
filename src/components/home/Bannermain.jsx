@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./global.css";
+import "../global.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -100,7 +100,7 @@ const Bannermain = () => {
           <a href="https://analysis.inticure.online/phone_signup" target="_blank" rel="noopener noreferrer">
 
           <button className="bg-custom-color font-semibold text-white py-2.5 px-12 rounded-3xl hover:bg-hover-color transition-all duration-200 ease-in-out">
-            Start a free online consultation{" "}
+            Start your first online consultation{" "}
           </button></a>
         </div>
         <div className="p-20 bg-white">

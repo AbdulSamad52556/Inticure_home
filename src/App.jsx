@@ -1,29 +1,31 @@
-import { useState } from 'react'
-import './App.css'
-import Header from './components/Header'
-import Bannermain from './components/Bannermain'
-import Assurance from './components/Assurance'
-import MedicalAdvisoryBoard from './components/MedicalAdvisoryBoard'
-import How_to_get_started from './components/How_to_get_started'
-import Ourspecialists from './components/Ourspecialists'
-import From_our_blog from './components/From_our_blog'
-import Footer from './components/Footer'
+import "./App.css";
+import Home from "./components/home/home";
+import { Routes, Route, useLocation } from "react-router-dom";
+import Whyus from "./components/whyus/whyus";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import Header from "./components/common/Header";
+import './index.css';  // Import the CSS styles here
+import Footer from "./components/common/Footer";
+import Faq from "./components/faq/faq";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const location = useLocation();
 
   return (
-    <div >
-      <Header/>
-      <Bannermain/>
-      <Assurance/>
-      <MedicalAdvisoryBoard/>
-      <How_to_get_started/>
-      <Ourspecialists />
-      <From_our_blog/>
+    <div className="App">
+        <Header />
+      <TransitionGroup>
+        <CSSTransition key={location.key} classNames="page" timeout={300}>
+          <Routes  location={location}>
+            <Route path="/" element={<Home />} />
+            <Route path="/whyus" element={<Whyus />} />
+            <Route path="/faq" element={<Faq />} />
+          </Routes>
+        </CSSTransition>
+      </TransitionGroup>
       <Footer/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

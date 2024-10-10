@@ -9,7 +9,7 @@ export default {
       backgroundColor: {
         'custom-color': '#6A1B78;',
         'hover-color':'#CE5988',
-        'bg-clr':'#F8F8FC',
+        'bg-clr':'#FBF8FC',
         'box1':'#804C8f',
         'box2':'#C54962',
         'box3':'#582768',
