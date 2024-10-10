@@ -34,10 +34,13 @@ const Header = () => {
                 <p>FAQ</p>
               </div>
             </a>
+            <a href="/contact">
 
             <div className="underline-animation2 cursor-pointer">
               <p>Contact</p>
             </div>
+            </a>
+
             <a href="https://customers.inticure.online">
               <div className="underline-animation cursor-pointer">
                 <p>Login</p>

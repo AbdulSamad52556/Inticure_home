@@ -7,6 +7,7 @@ import Header from "./components/common/Header";
 import './index.css';  // Import the CSS styles here
 import Footer from "./components/common/Footer";
 import Faq from "./components/faq/faq";
+import Contact from "./components/contact/contact";
 
 function App() {
   const location = useLocation();
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/whyus" element={<Whyus />} />
             <Route path="/faq" element={<Faq />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </CSSTransition>
       </TransitionGroup>
