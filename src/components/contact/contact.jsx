@@ -38,7 +38,9 @@ const Contact = () => {
       </div>
       <div>
         <form onSubmit={handleSubmit}>
-          <div className="flex flex-col gap-10">
+            <div className="w-full">
+
+          <div className="flex flex-col gap-10 justify-center">
             <div className=" flex justify-center gap-10">
               <div className="flex flex-col">
                 <label className="text-[13px] mb-2" for="name">
@@ -88,7 +90,7 @@ const Contact = () => {
 
                 <textarea
                   name="message"
-                  className="border-gray-400 border w-2/4 h-56 p-2 focus:outline-none"
+                  className="border-gray-400 border w-[680px] h-56 p-2 focus:outline-none"
                   id="message"
                   required
                 ></textarea>
@@ -96,7 +98,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex justify-center mb-96">
-            <div className="w-2/4 py-10">
+            <div className="w-2/6 py-10">
               <button
                 type="submit"
                 className="bg-[#6A1B78] text-white py-2 px-10 rounded-full font-medium"
@@ -105,6 +107,8 @@ const Contact = () => {
               </button>
             </div>
           </div>
+          </div>
+
         </form>
       </div>
     </div>

@@ -5,7 +5,7 @@ import Assure from './assure'
 
 const Whyus = () => {
   return (
-    <div>
+    <div className=''>
       <Experts/>
       <What/>
       <Assure/>
