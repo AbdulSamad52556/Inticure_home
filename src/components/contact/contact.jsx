@@ -1,10 +1,40 @@
 import React from "react";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    number: "",
+    message: ""
+  });
 
-    const handleSubmit = (e) =>{
-        e.preventDefault()
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value
+    });
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("http://127.0.0.1:8000/api/administrator/api/contact/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
+      if (response.ok) {
+        alert("Your message has been sent successfully!");
+      } else {
+        alert("Failed to send message.");
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      alert("An error occurred.");
     }
+  };
+
   return (
     <div>
       <div className="p-20">
@@ -49,6 +79,8 @@ const Contact = () => {
                 <input
                   type="text"
                   id="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   className="border-gray-400 border h-10 w-80 p-2  focus:outline-none"
                   required
                 />
@@ -63,6 +95,8 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   className="border-gray-400 border h-10 w-80 p-2 focus:outline-none"
                   required
                 />
@@ -74,6 +108,8 @@ const Contact = () => {
                 <input
                   type="number"
                   id="number"
+                  value={formData.number}
+                  onChange={handleChange}
                   className="border-gray-400 border h-10 w-80 p-2  focus:outline-none"
                   required
                 />
@@ -90,6 +126,8 @@ const Contact = () => {
 
                 <textarea
                   name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   className="border-gray-400 border w-[680px] h-56 p-2 focus:outline-none"
                   id="message"
                   required
