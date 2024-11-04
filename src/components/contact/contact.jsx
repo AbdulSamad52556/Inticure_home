@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -17,7 +17,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/administrator/api/contact/", {
+      const response = await fetch("https://api.inticure.online/api/administrator/api/contact/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -26,6 +26,13 @@ const Contact = () => {
       });
       if (response.ok) {
         alert("Your message has been sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          number: "",
+          message: ""
+        })
+
       } else {
         alert("Failed to send message.");
       }
@@ -73,7 +80,7 @@ const Contact = () => {
           <div className="flex flex-col gap-10 justify-center">
             <div className=" flex justify-center gap-10">
               <div className="flex flex-col">
-                <label className="text-[13px] mb-2" for="name">
+                <label className="text-[13px] mb-2" htmlFor="name">
                   Your Preferred Name *
                 </label>
                 <input
@@ -89,7 +96,7 @@ const Contact = () => {
             </div>
             <div className="flex justify-center gap-10">
               <div className="flex flex-col">
-                <label for="email" className="text-[13px] mb-2">
+                <label htmlFor="email" className="text-[13px] mb-2">
                   Email *
                 </label>
                 <input
@@ -102,7 +109,7 @@ const Contact = () => {
                 />
               </div>
               <div className="flex flex-col">
-                <label for="number" className="text-[13px] text-[#2C2A2A] mb-2">
+                <label htmlFor="number" className="text-[13px] text-[#2C2A2A] mb-2">
                   Best Number to reach you *
                 </label>
                 <input
@@ -118,7 +125,7 @@ const Contact = () => {
             <div className="flex justify-center">
               <div className="flex flex-col items-center w-full">
                 <label
-                  for="message"
+                  htmlFor="message"
                   className="text-[13px] text-[#2C2A2A] mb-2"
                 >
                   Message *
