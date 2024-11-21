@@ -22,23 +22,24 @@ const Bannermain = () => {
     };
   }, [text]);
   return (
-    <div className="z-10">
-      <div className="bg-bg-clr py-2">
-        <div className="mt-28 relative">
-          <h2 className="text-6xl font-normal text-neutral-800 text-center px-4">
+    <div className="z-10 w-full flex flex-col justify-center items-center">
+      <div className="py-2 ">
+        <div className="mt-28 w-[1000px]">
+          <h2 className="text-3xl md:text-4xl lg:text-6xl font-normal text-neutral-800 text-center px-10">
             When was the last time you <br />
             talked to a doctor about your <br />
             sexual health issue without <br />
-            feeling
-            <span className="ml-4 inline-block w-[200px] h-[72px] relative">
+            <span className="hidden lg:inline-block">feeling</span>
+            <span className=" inline-block w-[200px] h-[72px] relative">
+            <span className="inline-block lg:hidden z-10">feeling</span>
               <span
-                className={`absolute inset-0 transition-opacity duration-300 flex ${
+                className={`absolute inset-0 transition-opacity duration-300 px-10 py-2 md:py-0 flex ${
                   text === "nervous"
                     ? "opacity-100 text-hover-color font-bold slide-up-enter mt-5 "
                     : "opacity-0 text-white"
                 }`}
-              >
-                <div>{text} </div>
+              > 
+                <div> {text} </div>
                 <div
                   className={`${
                     text === "nervous" ? "text-black font-semibold ml-4" : null
@@ -49,7 +50,7 @@ const Bannermain = () => {
                 </div>
               </span>
               <span
-                className={`absolute inset-0 transition-opacity duration-300 ${
+                className={`absolute inset-0 transition-opacity duration-300 px-10 py-2 md:py-0 ${
                   text === "judged"
                     ? "opacity-100 text-hover-color font-bold slide-up-enter mt-5 flex"
                     : "opacity-0 text-white"
@@ -66,7 +67,7 @@ const Bannermain = () => {
                 </div>
               </span>
               <span
-                className={`absolute inset-0 transition-opacity duration-300 ${
+                className={`absolute inset-0 transition-opacity duration-300 px-6 py-2 md:py-0 ${
                   text === "embarassed"
                     ? "opacity-100 text-hover-color font-bold slide-up-enter mt-5 flex"
                     : "opacity-0 text-white"
@@ -88,12 +89,12 @@ const Bannermain = () => {
           </h2>
         </div>
 
-        <div className="flex flex-col justify-center -mt-14 items-center gap-7 p-10">
-          <h5 className="text-center mt-10 text-lg">
+        <div className="flex flex-col w-full justify-center -mt-14 items-center gap-7 p-10">
+          <h5 className="text-center mt-10 w-1/3 md:w-full text-sm lg:text-lg">
             At inticure, our medical specialists are non-judgmental. We don’t
             just treat your <br /> symptoms. Our team of medical specialists
             will identify the root cause(s) of your <br /> issues such as
-            erectile dysfunction, PCOS, premature ejaculation, stress, <br />{" "}
+            erectile dysfunction, PCOS, premature ejaculation, stress,<br />{" "}
             anxiety, weight problems and more to formulate a holistic treatment
             for you.
           </h5>
@@ -103,8 +104,9 @@ const Bannermain = () => {
             Start your first online consultation{" "}
           </button></a>
         </div>
-        <div className="p-20 bg-white">
-          <div className="flex justify-center px-16 mt-5 gap-2">
+      </div> 
+        <div className="md:p-20 bg-white flex">
+          <div className="flex flex-col lg:flex-row justify-center md:px-16 mt-5 gap-2">
             <div className="bg-box1 cursor-pointer flex flex-col justify-between w-48 h-64 p-4 text-white font-semibold text-2xl rounded-lg transform transition-transform duration-500 hover:scale-105">
               <div>
                 Sexual <br /> issues
@@ -148,7 +150,6 @@ const Bannermain = () => {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };

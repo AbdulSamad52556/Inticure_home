@@ -11,7 +11,7 @@ const From_our_blog = () => {
                 <div className="w-full flex mt-3 justify-center">
                     <p className=" border-b-2 border-gray-900 text-center w-12"> </p>
                 </div>
-                <div className='flex justify-center gap-7 mt-16'>
+                <div className='flex flex-col md:flex-row p-5 justify-center gap-7 mt-16'>
                     <div>
                         <div className="relative">
                             <img

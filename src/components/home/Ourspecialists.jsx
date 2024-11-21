@@ -15,7 +15,7 @@ const Ourspecialists = () => {
 
         <div className="flex flex-col gap-4 items-center mt-16">
 
-          <div className="flex gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <div className="w-80 rounded-xl flex text-white bg-[#CD4F7F] p-5 h-32 cursor-pointer transform transition-transform duration-500 hover:scale-105">
               <p className="text-white text-2xl">Gynaecologist</p>
               <div className="p-2">
@@ -29,7 +29,7 @@ const Ourspecialists = () => {
               </div>
             </div>
           </div>
-          <div className="flex gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <div className="w-80 rounded-xl flex text-white bg-[#893144] p-5 h-32 cursor-pointer transform transition-transform duration-500 hover:scale-105">
               <p className="text-white text-2xl">Sexologist</p>
               <div className="p-2">
@@ -43,7 +43,7 @@ const Ourspecialists = () => {
               </div>
             </div>
           </div>
-          <div className="flex gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <div className="w-80 rounded-xl flex text-white bg-[#6A1B78] p-5 h-32 cursor-pointer transform transition-transform duration-700 hover:scale-105">
               <p className="text-white text-2xl">Psychologist</p>
               <div className="p-2">
@@ -57,7 +57,7 @@ const Ourspecialists = () => {
               </div>
             </div>
           </div>
-          <div className="flex gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <div className="w-80 rounded-xl flex text-white bg-[#804C8F] p-5 h-32 cursor-pointer transform transition-transform duration-500 hover:scale-105">
               <p className="text-white text-2xl">Clinical dietician</p>
               <div className="p-2">
@@ -71,7 +71,7 @@ const Ourspecialists = () => {
               </div>
             </div>
           </div>
-          <div className="flex gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <div className="w-80 rounded-xl flex text-white bg-[#893144] p-5 h-32 cursor-pointer transform transition-transform duration-500 hover:scale-105">
               <p className="text-white text-2xl">Psychiatrist</p>
               <div className="p-2">

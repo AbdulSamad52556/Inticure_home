@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <div className={`w-full flex justify-between items-center px-6 md:px-32 py-5 md:py-7 fixed bg-white z-20 shadow-md`}>
+    <div className={`w-screen h-28 lg:h-20 flex justify-between items-center px-6 md:px-32 py-5 md:py-7 fixed bg-white z-20 shadow-md`}>
       {/* Logo Section */}
       <div className="">
         <img src={image} alt="Logo" className="w-40" />

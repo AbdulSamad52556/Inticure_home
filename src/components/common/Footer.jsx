@@ -6,13 +6,13 @@ import insta from "/insta.png";
 const Footer = () => {
   return (
     <div className="bg-[#804C8F] h-100 text-white">
-      <div className="flex justify-center gap-24 py-16">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-24 md:py-16">
         <div></div>
-        <div className="flex flex-col justify-between h-80">
+        <div className="flex flex-col justify-between md:h-80">
           <h1 className="text-4xl font-semibold w-60">
             Still have questions? <br /> We got you.
           </h1>
-          <p>
+          <p className="mt-4 md:m-0">
             For feedback or questions, <br /> complaints or issues, drop <br />
             us a note at <br />
             <a href="">wecare@inticure.com</a>
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="px-44 text-sm">
+      <div className=" px-5 mt-4 md:m-0 md:px-44 text-sm">
         Disclaimer: This website is not for use in case of medical emergencies.{" "}
         <br />
         The services provided on this website are not intended to be used for
@@ -61,7 +61,7 @@ const Footer = () => {
         <img src={lin} alt="" />
         <img src={insta} alt="" />
       </div>
-      <div className="px-44 h-20">
+      <div className="md:px-44 h-20">
         <p>©2024 inticure. Created with love 💛</p>
       </div>
     </div>

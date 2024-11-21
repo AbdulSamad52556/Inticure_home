@@ -11,7 +11,7 @@ const MedicalAdvisoryBoard = () => {
           Our Medical Advisory Board
         </h1>
       </div>
-      <div className="flex justify-center gap-20 mt-5">
+      <div className="flex flex-col lg:flex-row justify-center gap-20 mt-5">
         <div className="text-gray-800 flex flex-col items-center">
           <img src={anita} alt="" className="w-52 h-52" />
           <h1 className="font-semibold text-xl text-center mt-5">

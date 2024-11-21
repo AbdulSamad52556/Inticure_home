@@ -15,8 +15,8 @@ function App() {
 
   return (
     <div className="App">
-        <Header />
       <TransitionGroup>
+        <Header />
         <CSSTransition key={location.key} classNames="page" timeout={300}>
           <Routes  location={location}>
             <Route path="/" element={<Home />} />
