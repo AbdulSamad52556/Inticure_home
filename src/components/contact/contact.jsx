@@ -44,7 +44,7 @@ const Contact = () => {
 
   return (
     <div>
-      <div className="p-20">
+      <div className="md:p-20">
         <div className="mt-16">
           <h1 className="text-[45px] text-[#2C2A2A] font-medium text-center">
             Let's Connect
@@ -73,7 +73,7 @@ const Contact = () => {
           </p>
         </div>
       </div>
-      <div>
+      <div className="hidden md:block">
         <form onSubmit={handleSubmit}>
             <div className="w-full">
 
@@ -156,6 +156,94 @@ const Contact = () => {
 
         </form>
       </div>
+
+
+      <div className=" md:hidden">
+        <form onSubmit={handleSubmit}>
+            <div className="w-full">
+
+          <div className="flex flex-col gap-10 justify-center mt-10">
+            <div className=" flex justify-center gap-10">
+              <div className="flex flex-col">
+                <label className="text-[13px] mb-2" htmlFor="name">
+                  Your Preferred Name *
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="border-gray-400 border h-10 w-80 p-2  focus:outline-none"
+                  required
+                />
+              </div>
+            </div>
+            <div className="flex flex-col justify-center items-center gap-10">
+              <div className="flex flex-col items-center">
+                <label htmlFor="email" className="text-[13px] mb-2">
+                  Email *
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="border-gray-400 border h-10 w-80 p-2 focus:outline-none"
+                  required
+                />
+              </div>
+              <div className="flex flex-col">
+                <label htmlFor="number" className="text-[13px] text-[#2C2A2A] mb-2">
+                  Best Number to reach you * ( Preferably WhaysApp )
+                </label>
+                <input
+                  type="number"
+                  id="number"
+                  value={formData.number}
+                  onChange={handleChange}
+                  className="border-gray-400 border h-10 w-80 p-2  focus:outline-none"
+                  required
+                />
+              </div>
+            </div>
+            <div className="flex justify-center items-center">
+              <div className="flex flex-col items-center w-full">
+                <label
+                  htmlFor="message"
+                  className="text-[13px] text-[#2C2A2A] mb-2"
+                >
+                  Message *
+                </label>
+
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  className="border-gray-400 border w-80  p-2 focus:outline-none"
+                  id="message"
+                  required
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center mb-10">
+            <div className="py-10 w-full px-3">
+              <button
+                type="submit"
+                className="bg-[#6A1B78] w-full text-white py-2 px-10 rounded-full font-medium"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+          </div>
+
+        </form>
+      </div>
+
+
+
+
     </div>
   );
 };

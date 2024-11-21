@@ -4,14 +4,14 @@ import image2 from "/whyus-doctors-2.jpg";
 
 const Experts = () => {
   return (
-    <div className="h-[152vh] w-full">
+    <div className="md:h-[152vh] w-full">
       <div className="flex flex-col justify-center items-center">
 
-        <div className="flex flex-col md:flex-row py-32">
+        <div className="flex flex-col md:flex-row py-10 md:py-32">
           <div className="md:w-1/3  flex justify-center md:justify-end">
             <img src={image1} alt="" className="" />
           </div>
-          <div className="mt-20 px-20 md:w-2/3 md:px-32 py-2 flex flex-col items-center gap-5 text-[18px] text-gray-800">
+          <div className="mt-2 md:mt-20 px-10 md:w-2/3 md:px-32 py-2 flex flex-col items-center gap-5 text-xl md:text-[18px] text-gray-800">
             <div>
               At inticure, we don’t just treat your symptoms. Our medical
               experts will identify the root cause(s) of your issues and
@@ -27,7 +27,7 @@ const Experts = () => {
         </div>
 
         <div className="flex flex-col md:flex-row w-100 md:mx-56 -mt-8">
-          <div className="md:w-2/3 p-20 flex flex-col justify-center gap-5 text-[18px] text-gray-800">
+          <div className="md:w-2/3 px-10 md:p-10 flex flex-col justify-center gap-5 text-xl text-[18px] text-gray-800">
             <div>
               At inticure, your first consultation with one of our expert
               doctors is absolutely free. Yes, you read that right. FREE.
@@ -42,11 +42,12 @@ const Experts = () => {
             </div>
           </div>
 
-          <div className="md:w-1/3 flex justify-center md:justify-start">
+          <div className="md:w-1/3 mt-10 md:mt-0 mb-10 flex justify-center md:justify-start">
             <img src={image2} alt="" />
           </div>
         </div>
       </div>
+      
     </div>
   );
 };

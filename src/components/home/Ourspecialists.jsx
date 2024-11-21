@@ -5,9 +5,9 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const Ourspecialists = () => {
   return (
     <div className="bg-[#fcf3ff] ">
-      <div className="bg-[#fcf3ff] p-20">
+      <div className="bg-[#fcf3ff] p-10 md:p-20">
         <div className="text-center">
-          <p className="text-">Our specialists</p>
+          <p className="text-xl">Our specialists</p>
           <div className="w-full flex mt-3 justify-center">
             <p className=" border-b-2 border-gray-900 text-center w-12"> </p>
           </div>

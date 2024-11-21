@@ -2,16 +2,16 @@ import React from "react";
 
 const How_to_get_started = () => {
   return (
-    <div className="mt-20 -mb-14 text-gray-800 font-medium">
+    <div className="-mt-10 md:mt-20 mb-10 md:-mb-14 text-gray-800 font-medium">
       <div>
-        <h1 className="text-5xl text-center">How to get started</h1>
-        <p className="text-center font-normal mt-5">
+        <h1 className="text-4xl md:text-5xl text-center">How to get started</h1>
+        <p className="text-center font-normal text-xl mt-5">
           Here’s how we take you from oh no, to <br /> OH YES!
         </p>
       </div>
-      <div className="mt-16 ">
+      <div className="md:mt-16 ">
         {/* up */}
-        <div className="flex justify-around h-14 px-36 -mt-20 md:m-0">
+        <div className="flex justify-around h-14 px-36 md:-mt-20 md:m-0">
           <div className="flex justify-center w-72 ">
             <svg
               className="w-32 h-48 text-pink-300 hidden md:block"
@@ -39,26 +39,26 @@ const How_to_get_started = () => {
           </div>
         </div>
         {/* center */}
-        <div className="flex flex-col md:flex-row gap-10 justify-around px-36 font-normal">
+        <div className="flex flex-col md:flex-row gap-10 items-center md:justify-around md:px-36 font-normal">
           <div className="w-[226px] h-[99px] flex-wrap text-[15px]">
             <img
               src="https://static.wixstatic.com/media/33163f_03f9d931f08b4c93b84c93e4e8578bf1~mv2.jpg/v1/crop/x_3,y_1,w_551,h_242/fill/w_226,h_99,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cursor_btn.jpg"
               alt="no image"
             />
           </div>
-          <div className="w-[196px] h-[64px] flex-wrap text-[15px] ">
+          <div className="w-full px-20 md:px-0 text-center md:w-[196px] h-[64px] flex-wrap text-xl md:text-[15px] ">
             <span>
               Answer a few questions to schedule a free consultation with one of
               our doctors.
             </span>
           </div>
-          <div className="w-[189px] h-[88px] flex-wrap text-[15px]">
+          <div className="w-full px-20 md:px-0 mt-4 md:mt-0 text-center md:w-[189px] h-[88px] flex-wrap text-xl md:text-[15px]">
             <span>
               Our doctors will dig a little deeper to understand your concerns
               and guide you to the right specialists.
             </span>
           </div>
-          <div className="w-[199px] h-[64px] flex-wrap text-[15px]">
+          <div className="w-full px-20 md:px-0 mt-4 md:mt-0 md:w-[199px] h-[64px] flex-wrap text-xl md:text-[15px]">
             <span>
               Our team of specialists will help you address your issues
               holistically.

@@ -7,11 +7,11 @@ const MedicalAdvisoryBoard = () => {
   return (
     <div className="mb-20 pb-16 bg-[#fcf3ff]">
       <div>
-        <h1 className="text-5xl font-normal text-center py-20 text-gray-900">
+        <h1 className="text-4xl md:text-5xl font-normal text-center py-20 text-gray-900">
           Our Medical Advisory Board
         </h1>
       </div>
-      <div className="flex flex-col lg:flex-row justify-center gap-20 mt-5">
+      <div className="flex flex-col lg:flex-row justify-center gap-20 md:mt-5">
         <div className="text-gray-800 flex flex-col items-center">
           <img src={anita} alt="" className="w-52 h-52" />
           <h1 className="font-semibold text-xl text-center mt-5">

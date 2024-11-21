@@ -9,11 +9,11 @@ const Faq = () => {
 
   return (
     <div>
-      <div className="p-32 flex justify-center font-medium">
-        <h1 className="text-[#2C2A2A] text-[56px]">Have a question?</h1>
+      <div className="py-10 md:p-32 flex justify-center font-medium">
+        <h1 className="text-[#2C2A2A] text-5xl md:text-[56px]">Have a question?</h1>
       </div>
 
-      <div id="accordion-flush" className="px-56 -mt-5 mb-10">
+      <div id="accordion-flush" className="px-4 md:px-56 -mt-5 mb-10">
         <h2 id="accordion-flush-heading-1">
           <button
             type="button"

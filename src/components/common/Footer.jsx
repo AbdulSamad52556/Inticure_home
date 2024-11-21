@@ -6,10 +6,10 @@ import insta from "/insta.png";
 const Footer = () => {
   return (
     <div className="bg-[#804C8F] h-100 text-white">
-      <div className="flex flex-col md:flex-row justify-center items-center gap-24 md:py-16">
+      <div className="flex flex-col md:flex-row px-4 md:px-0 md:justify-center md:items-center md:gap-24 md:py-16">
         <div></div>
         <div className="flex flex-col justify-between md:h-80">
-          <h1 className="text-4xl font-semibold w-60">
+          <h1 className="text-4xl font-semibold md:w-60">
             Still have questions? <br /> We got you.
           </h1>
           <p className="mt-4 md:m-0">
@@ -61,7 +61,7 @@ const Footer = () => {
         <img src={lin} alt="" />
         <img src={insta} alt="" />
       </div>
-      <div className="md:px-44 h-20">
+      <div className="px-4 md:px-44 h-20">
         <p>©2024 inticure. Created with love 💛</p>
       </div>
     </div>
